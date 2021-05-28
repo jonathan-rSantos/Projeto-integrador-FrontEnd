@@ -1,4 +1,3 @@
-
 ul.social-network{
     list-style: none;
     padding: 0;
@@ -25,4 +24,7 @@ ul.social-network{
 
   .fa-github:hover{
       color: teal;
+  }
+  #bg-rodape{
+      background-color: #8dba45;
   }
