@@ -8,7 +8,6 @@ import { InicioComponent } from './inicio/inicio.component';
 const routes: Routes = [
   {path:'', redirectTo: 'entrar', pathMatch: 'full'},  /* adicionar tela principal (entrar ou login) */
   {path: 'inicio', component: InicioComponent},
-  {path:'contato', component: ContatoComponent},
   {path: 'cadastrar', component: CadastrarComponent},
   {path: 'entrar', component: EntrarComponent}
 ];

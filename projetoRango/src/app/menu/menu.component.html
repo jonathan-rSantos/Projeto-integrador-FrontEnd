@@ -11,18 +11,18 @@
      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
        <ul class="navbar-nav mr-auto d-flex align-items-center">  <!-- mr-auto joga a direia/ ml-auto a esquerda/ m-auto centro -->
          <li class="nav-item">
-           <a class="m-0 font-weight-bold text-white nav-link fs-16" href=""> Rango </a>
+           <a class="m-0 font-weight-bold text-white nav-link fs-16" href="#inicio"> Rango </a>
          </li>
             
          <!-- LI SOBRE NOS-->
          <li class="nav-item">
-             <a class="m-0 font-weight-bold nav-link text-white fs-16"  href="">Sobre nós</a>
+             <a class="m-0 font-weight-bold nav-link text-white fs-16"  href="#sobre">Sobre nós</a>
            </li>
             <!-- LI SOBRE NOS-->
 
             <!-- LI CONTATO-->
          <li class="nav-item">
-            <a class="m-0 font-weight-bold nav-link text-white fs-16" href="" routerLink='/contato'>Contato</a>
+            <a class="m-0 font-weight-bold nav-link text-white fs-16" href="#contato" >Contato</a>
           </li>
           <!-- LI CONTATO-->
                   
@@ -30,7 +30,7 @@
  
        <ul class="navbar-nav ml-auto d-flex align-items-center">
          <li class="nav-item pl-3 ">
-             <a class="m-0 font-weight-bold nav-link text-white fs-16" routerLink='/cadastrar'>  Sair <i class="fa fa-sign-out" aria-hidden="true"></i> </a>
+             <a (click)='sair()' class="m-0 font-weight-bold nav-link text-white fs-16" routerLink='/entrar'>  Sair <i class="fa fa-sign-out" aria-hidden="true"></i> </a>
            </li>
        </ul>
         
