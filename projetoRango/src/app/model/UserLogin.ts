@@ -7,3 +7,4 @@ export class UserLogin{
     public tipo: string
     public token: string
 }
+
