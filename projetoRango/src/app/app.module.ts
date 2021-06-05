@@ -13,6 +13,7 @@ import { ContatoComponent } from './contato/contato.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { FormsModule } from '@angular/forms';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     RodapeComponent,
     SobreComponent,
     ContatoComponent,
-    EntrarComponent
+    EntrarComponent,
+    TemaEditComponent
   ],
   imports: [
     BrowserModule,
