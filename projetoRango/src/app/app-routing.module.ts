@@ -14,7 +14,6 @@ const routes: Routes = [
   {path: 'cadastrar', component: CadastrarComponent},
   {path: 'entrar', component: EntrarComponent},
   {path: 'tema', component: TemaComponent},
-  {path: 'entrar', component: EntrarComponent},
   {path: 'tema-edit/:id', component: TemaEditComponent},
   {path: 'tema-delete/:id', component: TemaDeleteComponent}
 ];

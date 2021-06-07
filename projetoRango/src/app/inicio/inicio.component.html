@@ -1,8 +1,7 @@
 <div class="container-fluid" id="img-bg">
-<<<<<<< HEAD
     <div class="row">
 
-         <div class="col-md-6">
+        <div class="col-md-6">
             <div class="row d-flex align-items-center ml-4">
 
                 <div class="col-md-6 glass mt-5">
@@ -15,26 +14,10 @@
                     </h4>
 
                     <div class="row justify-content-center">
-                        <button class="btn btn-light mt-4 mb-4">Nova Postagem</button>
-                        <button class="btn btn-light mt-4 ml-3 mb-4">Ver Postagens</button>
+                        <button type="button" class="btn btn-light mt-4 mb-4" data-toggle="modal" data-target="#novaPostagem">Nova
+                            Postagem</button>
+                        <a class="btn btn-light mt-4 ml-3 mb-4" href="#postagens">Ver Postagens</a>
                     </div>
-=======
-
-    <div class="row d-flex align-items-center">
-        <div class="glass col-md-6">
-
-            <div class="row d-flex justify-content-center mt-4">
-                <div class="col-md-6">
-                    <h1 class="fs-40">Seja bem vinde!</h1>
-                    <h5 class="fs-18">Expresse aqui os seus pensamentos e opiniões</h5>
-                </div>
-            </div>
-
-            <div class="row d-flex justify-content-center mt-3 mb-5">
-                <div class="col-md-6">
-                    <button class="btn btn-light" data-toggle="modal" data-target="#novaPostagem">Nova Postagem</button>
-                    <a class="btn btn-outline-light mt-4 ml-3 mb-4" href="#postagens">Ver Postagens</a>
->>>>>>> 515d4d3c54c56710e6a9993caf8fb36ee2773413
                 </div>
             </div>
 
@@ -51,23 +34,33 @@
 <div class="container" id="postagens">
 
     <nav>
-        <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+        <ul class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+            <li>
+                <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-MinhasPostagens-tab"
+                    data-toggle="tab" href="#MinhasPostagens" role="tab" aria-controls="nav-MinhasPostagens"
+                    aria-selected="true">Minhas postagens</a>
+            </li>
 
+            <li>
+                <a class="nav-item nav-link active text-secondary font-weight-bold" id="nav-TodasPostagens-tab"
+                    data-toggle="tab" href="#TodasPostagens" role="tab" aria-controls="nav-TodasPostagens"
+                    aria-selected="false">Todas as postagens</a>
+            </li>
 
-          <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-MinhasPostagens-tab" data-toggle="tab" href="#MinhasPostagens" role="tab" aria-controls="nav-MinhasPostagens" aria-selected="true">Minhas postagens</a>
+            <li>
+                <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-PostagensTema-tab"
+                    data-toggle="tab" href="#PostagensTema" role="tab" aria-controls="nav-PostagensTema"
+                    aria-selected="false">Postagens por tema</a>
+            </li>
+        </ul>
+    </nav>
 
-          <a class="nav-item nav-link active text-secondary font-weight-bold" id="nav-TodasPostagens-tab" data-toggle="tab" href="#TodasPostagens" role="tab" aria-controls="nav-TodasPostagens" aria-selected="false">Todas as postagens</a>
+    <div class="tab-content" id="nav-tabContent">
 
-          <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-PostagensTema-tab" data-toggle="tab" href="#PostagensTema" role="tab" aria-controls="nav-PostagensTema" aria-selected="false">Postagens por tema</a>
-        
-        </div>
-      </nav>
-      
-      <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade show" id="MinhasPostagens" role="tabpanel" aria-labelledby="nav-MinhasPostagens-tab">
             Minhas postagens
         </div>
-        
+
 
         <div class="tab-pane fade active" id="TodasPostagens" role="tabpanel" aria-labelledby="nav-TodasPostagens-tab">
             Todas as postagens
@@ -76,18 +69,18 @@
         <div class="tab-pane fade" id="PostagensTema" role="tabpanel" aria-labelledby="nav-PostagensTema-tab">
             Postagens por tema
         </div>
-      </div>
+    </div>
 
 </div>
 
 
-<div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentrelizado" aria-hidden="true">
+<div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="TituloModalCentralizado">Nova postagem</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
@@ -102,7 +95,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="tema">Escolha um tema ou <a data-dismiss="modal" routerLink='/tema'>Cadastre um novo</a>: </label>
+                    <label for="tema">Escolha um tema ou <a data-dismiss="modal" routerLink='/tema'>Cadastre um
+                            novo</a>: </label>
                     <select name="tema" id="" class="form-control">
                         <option value="">Temas</option>
                     </select>
@@ -116,11 +110,4 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD
 </div>
-=======
-  </div>
-
-
-
->>>>>>> 515d4d3c54c56710e6a9993caf8fb36ee2773413

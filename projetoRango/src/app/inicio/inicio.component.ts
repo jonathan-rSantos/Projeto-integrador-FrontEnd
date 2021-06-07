@@ -19,5 +19,9 @@ export class InicioComponent implements OnInit {
       this.router.navigate(['/entrar'])
     }
   }
+  teste(){
+    console.log('funcionei')
+  }
 
 }
+
