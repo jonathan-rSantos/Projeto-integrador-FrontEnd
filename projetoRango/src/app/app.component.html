@@ -1,5 +1,6 @@
 <app-menu *ngIf='auth.logado()'> </app-menu>
 <router-outlet></router-outlet>
+<router-outlet name="inicio"></router-outlet>
 <app-sobre *ngIf='auth.logado()'></app-sobre>
 <app-contato *ngIf='auth.logado()'></app-contato>
 <app-rodape *ngIf='auth.logado()'></app-rodape>

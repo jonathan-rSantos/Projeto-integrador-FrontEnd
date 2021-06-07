@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment.prod';
 })
 export class InicioComponent implements OnInit {
 
-  constructor(
+  constructor(  
     private router: Router
   ) { }
 
