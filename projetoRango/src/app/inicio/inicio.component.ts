@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment.prod';
 })
 export class InicioComponent implements OnInit {
 
-  constructor(
+  constructor(  
     private router: Router
   ) { }
 
@@ -19,5 +19,9 @@ export class InicioComponent implements OnInit {
       this.router.navigate(['/entrar'])
     }
   }
+  teste(){
+    console.log('funcionei')
+  }
 
 }
+
