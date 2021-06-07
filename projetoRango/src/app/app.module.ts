@@ -1,4 +1,4 @@
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -14,6 +14,7 @@ import { EntrarComponent } from './entrar/entrar.component';
 import { FormsModule } from '@angular/forms';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { TemaComponent } from './tema/tema.component';
+import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { TemaComponent } from './tema/tema.component';
     SobreComponent,
     ContatoComponent,
     EntrarComponent,
-    TemaComponent
+    TemaComponent,
+    TemaDeleteComponent
   ],
   imports: [
     BrowserModule,
