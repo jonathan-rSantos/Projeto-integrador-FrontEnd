@@ -1,31 +1,43 @@
 <div class="container-fluid" id="img-bg">
 
-    <div class="row d-flex align-items-center ml-4">
-                 
-                <div class="col-md-6 glass mt-5">
+    <div class="row d-flex align-items-center">
+        <div class="glass col-md-6">
 
-                    <h1 class="text-center fs-54">Seja bem vinde!</h1>
-                    <h5 class="text-center fs-18">Expresse aqui os seus pensamentos e pensamentos</h5>
-
-                    <div class="row justify-content-center">
-                        <button class="btn btn-light mt-4 mb-4" data-toggle="modal" data-target="#novaPostagem">Nova Postagem</button>
-                        <a class="btn btn-outline-light mt-4 ml-3 mb-4" href="#postagens">Ver Postagens</a>
-                    </div>
-                </div>
-                <div class="col-md-6 d-flex align-items-center">
-                   <img src="https://i.imgur.com/zG7prQn.png" alt="" width="500px" height="500px">     
+            <div class="row d-flex justify-content-center mt-4">
+                <div class="col-md-6">
+                    <h1 class="fs-40">Seja bem vinde!</h1>
+                    <h5 class="fs-18">Expresse aqui os seus pensamentos e opiniões</h5>
                 </div>
             </div>
+
+            <div class="row d-flex justify-content-center mt-3 mb-5">
+                <div class="col-md-6">
+                    <button class="btn btn-light" data-toggle="modal" data-target="#novaPostagem">Nova Postagem</button>
+                    <a class="btn btn-outline-light mt-4 ml-3 mb-4" href="#postagens">Ver Postagens</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- <div class="col-md-6">
+            <img src="" alt="">
+        </div> -->
+    </div>
 </div>
+
+
 <div class="container" id="postagens">
 
-    <nav class="d-flex justify-content-center">
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <button class="nav-link text-secondary font-weight-bold" id="nav-MinhasPostagens-tab" data-toggle="tab" href="#MinhasPostagens" role="tab" aria-controls="nav-MinhasPostagens" aria-selected="true">Minhas postagens</button>
+    <nav>
+        <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
 
-          <button class="nav-link active text-secondary font-weight-bold" id="nav-TodasPostagens-tab" data-toggle="tab" href="#TodasPostagens" role="tab" aria-controls="nav-TodasPostagens" aria-selected="false">Todas as postagens</button>
 
-          <button class="nav-link text-secondary font-weight-bold" id="nav-PostagensTema-tab" data-toggle="tab" href="#PostagensTema" role="tab" aria-controls="nav-PostagensTema" aria-selected="false">Postagens por tema</button>
+          <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-MinhasPostagens-tab" data-toggle="tab" href="#MinhasPostagens" role="tab" aria-controls="nav-MinhasPostagens" aria-selected="true">Minhas postagens</a>
+
+          <a class="nav-item nav-link active text-secondary font-weight-bold" id="nav-TodasPostagens-tab" data-toggle="tab" href="#TodasPostagens" role="tab" aria-controls="nav-TodasPostagens" aria-selected="false">Todas as postagens</a>
+
+          <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-PostagensTema-tab" data-toggle="tab" href="#PostagensTema" role="tab" aria-controls="nav-PostagensTema" aria-selected="false">Postagens por tema</a>
         
         </div>
       </nav>
@@ -48,41 +60,3 @@
 
 
 
-<!-- Vertically centered modal -->
-<div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentrelizado" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="TituloModalCentralizado">Nova postagem</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <label for="titulo">Título</label>
-                    <input type="text" class="form-control" id="titulo" placeholder="Digite o título">
-                </div>
-
-                <div class="form-group">
-                    <label for="texto">Texto</label>
-                    <textarea class="form-control" name="texto" id="texto" rows="3"></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label for="tema">Escolha um tema ou <a data-dismiss="modal" routerLink='/tema'>Cadastre um novo</a>: </label>
-                    <select name="tema" id="" class="form-control">
-                        <option value="">Temas</option>
-                    </select>
-                </div>
-
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-success">Publicar</button>
-            </div>
-        </div>
-    </div>
-  </div>
-    
