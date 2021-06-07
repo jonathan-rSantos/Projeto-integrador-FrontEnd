@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { TemaComponent } from './tema/tema.component';
 import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
+import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component'
     ContatoComponent,
     EntrarComponent,
     TemaComponent,
-    TemaDeleteComponent
+    TemaDeleteComponent,
+    TemaEditComponent
   ],
   imports: [
     BrowserModule,
