@@ -59,20 +59,25 @@
                 </button>
             </div>
             <div class="modal-body">
+
                 <div class="form-group">
                     <label for="titulo">Título</label>
-                    <input type="text" class="form-control" id="titulo" placeholder="Digite o título">
+                    <input [(ngModel)]='postagem.titulo' type="text" class="form-control" id="titulo" placeholder="Digite o título">
                 </div>
 
                 <div class="form-group">
                     <label for="texto">Texto</label>
-                    <textarea class="form-control" name="texto" id="texto" rows="3"></textarea>
+                    <textarea [(ngModel)]='postegem.texto' class="form-control" name="texto" id="texto" rows="3"></textarea>
                 </div>
 
                 <div class="form-group">
                     <label for="tema">Escolha um tema ou <a data-dismiss="modal" routerLink='/tema'>Cadastre um novo</a>: </label>
-                    <select name="tema" id="" class="form-control">
-                        <option value="">Temas</option>
+                    <select name="tema" id="" class="form-control" [(ngModel)]='idTema' (change)
+                    ='findByIdTema()'>
+                        <option *ngFor='let item of listaTemas' value="{{item.id}}"> 
+                            {{item.descricao}}
+                        </option>
+                        
                     </select>
                 </div>
 
@@ -80,7 +85,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-success" style="background-color: #8dba45">Publicar</button>
+                <button type="button" class="btn btn-success" (click)='publicar' style="background-color: #8dba45">Publicar</button>
             </div>
         </div>
     </div>
