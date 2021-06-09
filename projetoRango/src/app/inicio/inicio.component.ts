@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
@@ -18,7 +19,7 @@ export class InicioComponent implements OnInit {
   postagem: Postagem = new Postagem()
   listaTemas: Tema []
   idTema: number
-  
+  listasPostagens: Postagem[]
   user: User = new User()
   idUser = environment.id
 
@@ -27,14 +28,42 @@ export class InicioComponent implements OnInit {
     private postagemService: PostagemService,
     private temaService: TemaService,
     private authService: AuthService
-  ) { }
-
+  ){}
+  
   ngOnInit() {
 
     if(environment.token == ''){
       this.router.navigate(['/entrar'])
     }
+
+    this.getAllTemas ()
+    this.getAllPostagens()
   }
+
+  getAllTemas() {
+    this.temaService.getAllTema().subscribe((resp: Tema[])=>  {
+      this.listaTemas = resp   
+    })
+  }
+
+  findByIdTema(){
+    this.temaService.getByIdTema(this.idTema).subscribe((resp:Tema)=>{
+      this.tema = resp
+    })
+  }
+  getAllPostagens(){
+    this.postagemService.getAllPostagens().subscribe((resp: Postagem[]) =>{
+      this.listasPostagens = resp 
+    })
+  }
+
+  findByIdUser(){
+    this.authService.getByIdUser(this.idUser).subscribe((resp: User) =>{
+      this.user = resp
+    })
+  }
+  
+
   teste(){
     console.log('funcionei')
   }
