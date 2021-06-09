@@ -43,9 +43,7 @@ export class InicioComponent implements OnInit {
   getAllTemas() {
     this.temaService.getAllTema().subscribe((resp: Tema[])=>  {
       this.listaTemas = resp   
-    }, erro => {
-      console.log(erro)
-      console.log(this.listaTemas)
+      console.log('temas: funcionei')
     })
   }
 
@@ -57,6 +55,8 @@ export class InicioComponent implements OnInit {
   getAllPostagens(){
     this.postagemService.getAllPostagens().subscribe((resp: Postagem[]) =>{
       this.listasPostagens = resp 
+    }, erro => {
+      console.log('postagens: funcionei')
     })
   }
 
@@ -82,6 +82,7 @@ export class InicioComponent implements OnInit {
       alert('Postagem realizada com sucesso!')
       this.postagem = new Postagem()
       this.getAllPostagens()
+      console.log('postagens: funcionei')
     })
   }
 }
