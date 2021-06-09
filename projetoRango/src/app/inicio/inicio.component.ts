@@ -43,6 +43,9 @@ export class InicioComponent implements OnInit {
   getAllTemas() {
     this.temaService.getAllTema().subscribe((resp: Tema[])=>  {
       this.listaTemas = resp   
+    }, erro => {
+      console.log(erro)
+      console.log(this.listaTemas)
     })
   }
 
