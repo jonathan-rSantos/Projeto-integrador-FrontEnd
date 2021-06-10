@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment.prod';
 import { TemaService } from '../service/tema.service';
 import { Tema } from '../model/Tema';
+import { AlertasService } from '../service/alertas.service';
 
 @Component({
   selector: 'app-tema',
@@ -16,7 +17,8 @@ listaTemas: Tema[]
 
   constructor(
     private router: Router,
-    private temaService: TemaService
+    private temaService: TemaService,
+    private alertas: AlertasService
   ) { }
 
   ngOnInit(){
@@ -39,7 +41,7 @@ listaTemas: Tema[]
     cadastrar(){
       this.temaService.postTema(this.tema).subscribe((resp: Tema) =>{
         this.tema = resp
-        alert('Tema cadastrado, parabéns!')
+        this.alertas.showAlertSuccess('Tema cadastrado, parabéns!')
         this.findAllTemas()
         this.tema = new Tema()
       })
