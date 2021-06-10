@@ -13,7 +13,7 @@ import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delet
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  {path:'', redirectTo: 'entrar', pathMatch: 'full'},  /* adicionar tela principal (entrar ou login) */
+  {path:'', redirectTo: 'home', pathMatch: 'full'},  /* adicionar tela principal (entrar ou login) */
   {path: 'home', component: HomeComponent},
   {path: 'inicio', component: InicioComponent},
   {path: 'cadastrar', component: CadastrarComponent},
