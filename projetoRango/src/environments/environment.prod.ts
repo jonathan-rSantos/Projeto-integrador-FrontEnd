@@ -4,7 +4,8 @@ export const environment = {
   nome: '',
   id: 0,
   foto: '',
-  server: 'https://projetorango.herokuapp.com'
+  server: 'https://projetorango.herokuapp.com',
+  tipo:''
 };
 
 //http://localhost:8080
