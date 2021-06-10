@@ -1,4 +1,4 @@
-
+import { PostagemService } from './../service/postagem.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
@@ -6,7 +6,6 @@ import { Postagem } from '../model/Postagem';
 import { Tema } from '../model/Tema';
 import { User } from '../model/User';
 import { AuthService } from '../service/auth.service';
-import { PostagemService } from '../service/postagem.service';
 import { TemaService } from '../service/tema.service';
 
 @Component({
@@ -19,7 +18,9 @@ export class InicioComponent implements OnInit {
   postagem: Postagem = new Postagem()
   listaTemas: Tema []
   idTema: number
+  nomeTema: string
   listasPostagens: Postagem[]
+  tituloPost: string
   user: User = new User()
   idUser = environment.id
 
@@ -84,6 +85,28 @@ export class InicioComponent implements OnInit {
       this.getAllPostagens()
       console.log('postagens: funcionei')
     })
+  }
+
+  findByTituloPostagem(){
+    
+    if(this.tituloPost == ''){
+      this.getAllPostagens()
+    } else{
+      this.postagemService.getbyTituloPostagem(this.tituloPost).subscribe((resp: Postagem[])=>{
+        this.listasPostagens = resp
+      })
+    }
+    
+  }
+
+  findByNomeTema(){
+    if(this.nomeTema == ''){
+      this.getAllTemas()
+    } else{
+      this.temaService.getByNomeTema(this.nomeTema).subscribe((resp: Tema[])=> {
+        this.listaTemas = resp
+      })
+    }
   }
 }
 
