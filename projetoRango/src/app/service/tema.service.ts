@@ -1,7 +1,7 @@
+import { environment } from './../../environments/environment.prod';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { environment } from 'src/environments/environment.prod';
 import { Tema } from '../model/Tema';
 
 @Injectable({
@@ -20,6 +20,10 @@ export class TemaService {
  }
  getByIdTema(id: number): Observable<Tema>{
   return this.http.get<Tema>(`${environment.server}/tema/${id}`, this.token)
+  }
+
+  getByNomeTema(nome: string): Observable<Tema[]>{
+    return this.http.get<Tema[]>(`${environment.server}/tema/nome${nome}`, this.token)
   }
 
   /* getByDescricaoTema(descricao: string): Observable<Tema[]>{
