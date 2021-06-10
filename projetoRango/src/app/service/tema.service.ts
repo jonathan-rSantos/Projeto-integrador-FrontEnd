@@ -18,6 +18,7 @@ export class TemaService {
  getAllTema(): Observable<Tema[]>{
   return this.http.get<Tema[]>(`${environment.server}/tema`, this.token)
  }
+ 
  getByIdTema(id: number): Observable<Tema>{
   return this.http.get<Tema>(`${environment.server}/tema/${id}`, this.token)
   }

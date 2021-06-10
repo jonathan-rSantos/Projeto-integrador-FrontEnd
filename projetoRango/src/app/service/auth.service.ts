@@ -40,13 +40,13 @@ export class AuthService {
 
     return ok
   }
- /*  adm(){
+  adm(){
     let ok: boolean = false
 
-    if (environment.tipo != '') {
+    if (environment.tipo == 'adm') {
       ok = true
     }
 
     return ok
-  } */
+  } 
 }
