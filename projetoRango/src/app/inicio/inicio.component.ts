@@ -39,7 +39,7 @@ reverse = true
   ngOnInit() {
 
     if(environment.token == ''){
-      this.router.navigate(['/entrar'])
+      this.router.navigate(['/home'])
     }
 
     this.getAllTemas ()
