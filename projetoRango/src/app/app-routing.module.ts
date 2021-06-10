@@ -10,9 +10,11 @@ import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component'
 import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
 import { UserEditComponent } from './edit/user-edit/user-edit.component';
 import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  {path:'', redirectTo: 'entrar', pathMatch: 'full'},  /* adicionar tela principal (entrar ou login) */
+  {path:'', redirectTo: 'home', pathMatch: 'full'},  /* adicionar tela principal (entrar ou login) */
+  {path: 'home', component: HomeComponent},
   {path: 'inicio', component: InicioComponent},
   {path: 'cadastrar', component: CadastrarComponent},
   {path: 'entrar', component: EntrarComponent},
