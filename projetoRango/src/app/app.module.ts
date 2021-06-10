@@ -22,6 +22,7 @@ import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delet
 import { UserEditComponent } from './edit/user-edit/user-edit.component';
 import { HomeComponent } from './home/home.component';
 import { AlertasComponent } from './alertas/alertas.component';
+import { OrderModule } from 'ngx-order-pipe';
 
 
 @NgModule({

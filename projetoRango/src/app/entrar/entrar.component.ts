@@ -39,7 +39,7 @@ export class EntrarComponent implements OnInit {
       this.router.navigate(['/inicio'])
       }, erro => { 
         if (erro.status==500){
-          this.alertas.showAlertDanger('Usuario ou senha estaão incorretas')
+          this.alertas.showAlertDanger('Usuario ou senha estão incorretas')
         }
       
     } )
