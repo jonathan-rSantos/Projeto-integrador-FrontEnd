@@ -19,9 +19,13 @@
         backdrop-filter: blur( 20.0px );
         -webkit-backdrop-filter: blur( 20.0px );
         border-radius: 10px;
-        width: 600px;
+        width: 200px;
+        height: 550px;
     }
     
     .font-desc{
         font-size: 50px;
     }
+    
+    
+      

@@ -22,6 +22,7 @@ import { UserEditComponent } from './edit/user-edit/user-edit.component';
 import { HomeComponent } from './home/home.component';
 import { AlertasComponent } from './alertas/alertas.component';
 import { OrderModule } from 'ngx-order-pipe';
+import { DesenvolvedoresComponent } from './desenvolvedores/desenvolvedores.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { OrderModule } from 'ngx-order-pipe';
     PostagemDeleteComponent,
     UserEditComponent,
     HomeComponent,
-    AlertasComponent
+    AlertasComponent,
+    DesenvolvedoresComponent
   ],
   imports: [
     BrowserModule,

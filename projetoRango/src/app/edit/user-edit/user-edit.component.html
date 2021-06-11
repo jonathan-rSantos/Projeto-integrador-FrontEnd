@@ -1,7 +1,7 @@
 <div class="container mb-5 mt-5">
     <div class="row">
         <div class="col-md-12">
-            <h1 class="text-center text-secundary">Atualizar usuario</h1>
+            <h1 class="text-center text-dark">Atualizar usuario</h1>
 
         </div>
     </div>
@@ -39,13 +39,13 @@
                 <label for="ConfirmeSenha">Tipo de usuário</label>
                 <select class="form-control" name="tipo" id="tipo" (change)='tipoUser($event)'>
                     <option> selecione um tipo de usuário</option>
-                    <option value="normal"> Normal </option>
-                    <option value="admin"> Administrador </option>
+                    <option value="normal"> Voluntárie </option>
+                    <option value="admin"> ONG </option>
                 </select>
             </div>
 
             <div class="d-flex justify-content-center">
-                <button type="submit" class="btn btn-danger mr-4" routerLink='/inicio'>Cancelar</button>
+                <button type="submit" class="btn btn-danger button-purple mr-4" routerLink='/inicio'>Cancelar</button>
                 <button type="submit" class="btn btn-success" style="background-color: #8dba45" (click)='atualizarUser()'> Atualizar</button>
             </div>
         </div>

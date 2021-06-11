@@ -18,15 +18,15 @@ export class AlertasService {
   }
 
   showAlertDanger(message: string){
-    this.showAlert(message, 'danger')
+    this.showAlert(message, 'secondary color-danger')
   }
 
   showAlertSuccess(message: string){
-    this.showAlert(message, 'success')
+    this.showAlert(message, 'success color-success')
   }
 
   showAlertInfo(message: string){
-    this.showAlert(message, 'info')
+    this.showAlert(message, 'info color-info')
   }
 
 }
