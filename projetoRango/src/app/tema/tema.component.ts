@@ -27,7 +27,11 @@ listaTemas: Tema[]
       this.router.navigate(['/entrar'])
     }
     if(environment.tipo != 'admin'){
+<<<<<<< HEAD
       this.alertas.showAlertInfo('Você precisa ser uma ONG para cadastrar um novo tema')
+=======
+      this.alertas.showAlertInfo('Você precisa ser um administrador para cadastrar um novo tema')
+>>>>>>> fb97e94bbb2f11354c8cbab0de3431345c9c5187
       this.router.navigate(['/inicio'])
     }
 

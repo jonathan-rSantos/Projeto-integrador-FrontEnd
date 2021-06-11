@@ -34,6 +34,7 @@ export class EntrarComponent implements OnInit {
       environment.id = this.userLogin.id
       environment.tipo = this.userLogin.tipo
       localStorage.setItem('token', this.userLogin.token)
+      localStorage.setItem('foto', this.userLogin.foto)
 
 
       this.router.navigate(['/inicio'])
@@ -44,6 +45,8 @@ export class EntrarComponent implements OnInit {
       
     } )
   }
+   
+ 
 
 
 }
