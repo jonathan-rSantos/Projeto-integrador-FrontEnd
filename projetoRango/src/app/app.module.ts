@@ -24,7 +24,6 @@ import { AlertasComponent } from './alertas/alertas.component';
 import { OrderModule } from 'ngx-order-pipe';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
