@@ -26,8 +26,7 @@ listaTemas: Tema[]
     if(environment.token == ''){
       this.router.navigate(['/entrar'])
     }
-    
-    if(environment.tipo != 'adm'){
+    if(environment.tipo != 'admin'){
       this.alertas.showAlertInfo('Você precisa ser um administrador para cadastrar um novo tema')
       this.router.navigate(['/inicio'])
     }

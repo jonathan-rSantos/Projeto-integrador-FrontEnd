@@ -11,7 +11,7 @@ import { AuthService } from '../service/auth.service';
 export class MenuComponent implements OnInit {
 
   nome = environment.nome
-  foto = environment.foto 
+  foto = localStorage.getItem('foto')
   id = environment.id
 
   constructor(
@@ -29,16 +29,6 @@ export class MenuComponent implements OnInit {
     environment.foto = ''
     environment.id = 0
   }
-  
-exibir(){
-  let ok: boolean = true
-
-  if (environment.token != '') {
-    ok = false
-  }
-
-  return ok
-
-
+ 
 }
-}
+

@@ -1,4 +1,5 @@
 /* Reset. */
+
 * {
     box-sizing: border-box;
 }
@@ -11,6 +12,7 @@
 } */
 
 /* Panels. */
+
 .splitview {
     position: relative;
     width: 100%;
@@ -25,54 +27,53 @@
     overflow: hidden;
 }
 
-    .panel .content {
-        position: absolute;
-        width: 100vw;
-        min-height: 45vw;
-        color: #FFF;
-    }
+.panel .content {
+    position: absolute;
+    width: 100vw;
+    min-height: 45vw;
+    color: #FFF;
+}
 
-    .panel .description {
-        width: 25%;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        text-align: center;
-    }
+.panel .description {
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
 
-    .panel img {
-        box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.15);
-        width: 35%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
+.panel img {
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.15);
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .bottom {
     background-color: #61156b;
     z-index: 1;
 }
 
-    .bottom .description {
-        right: 5%;
-    }
+.bottom .description {
+    right: 5%;
+}
 
 .top {
     background-color: #8dba45;
     z-index: 2;
     width: 50vw;
-
     /*-webkit-clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
     clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);*/
 }
 
-    .top .description {
-        left: 5%;
-    }
+.top .description {
+    left: 5%;
+}
 
 /* Handle. */
+
 .handle {
     height: 100%;
     position: absolute;
@@ -85,6 +86,7 @@
 }
 
 /* Skewed. */
+
 .skewed .handle {
     top: 50%;
     transform: rotate(30deg) translateY(-50%);
@@ -106,89 +108,79 @@
 }
 
 /* Responsive. */
+
 @media (max-width: 900px) {
     body {
         font-size: 75%;
     }
 }
 
-#img-bg{
+#img-bg {
     background-image: url('https://i.imgur.com/wIeMbcM.jpg');
-    
     min-height: 695px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    }
+}
 
-
-    .img {
-
-        image-rendering: pixelated;
-
-    }
-
-
+.img {
+    image-rendering: pixelated;
+}
 
 /* Cool font from Google Fonts! */
-@import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
 body {
-	margin: 0px;
+    margin: 0px;
 }
 
 #container {
-	
-	position: absolute;
-	margin: auto;
-	width: 100vw;
-	height: 80pt;
-	top: 0;
-	bottom: 0;
-	
-	filter: url(#threshold) blur(0.6px);
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 80pt;
+    top: 0;
+    bottom: 0;
+    filter: url(#threshold) blur(0.6px);
 }
 
 #text1, #text2 {
-	position: absolute;
-	width: 100%;
-	display: inline-block;
-	
-	font-family: 'Raleway', sans-serif;
-	font-size: 40pt;
-	
-	text-align: center;
-	
-	user-select: none;
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40pt;
+    text-align: center;
+    user-select: none;
 }
-.mr-6{
+
+.mr-6 {
     margin-right: 25px;
 }
-.marca-cor{
-color:#8dba45;
+
+.marca-cor {
+    color: #8dba45;
 }
 
-.texto-blue{
-color:#00238b;
-
-}
-.justify{
-text-align: justify;
-
+.texto-blue {
+    color: #00238b;
 }
 
-.bordaverde{
+.justify {
+    text-align: justify;
+}
 
-    border-color: #8dba45;;
+.bordaverde {
+    border-color: #8dba45;
+    ;
 }
 
 .img50 {
-
-    max-width: 250px; 
+    max-width: 250px;
     max-height: 250px
-} 
+}
 
-#img-bg{
+#img-bg {
     background-image: url('https://i.imgur.com/RWzvgQ4.jpg');
     min-height: 695px;
     background-position: center;
@@ -196,8 +188,12 @@ text-align: justify;
     background-size: cover;
 }
 
-.fundo{
+.fundo {
     background-color: rgba(255, 255, 255, 0.35);
     box-shadow: 0 8px 32px 0 rgb(31 38 135/37%);
     backdrop-filter: blur(20.0px);
+}
+.fs-16
+{
+    font-size: 16pt;
 }
