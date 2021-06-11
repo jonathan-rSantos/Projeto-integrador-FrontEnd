@@ -10,7 +10,8 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.transicao()
+    this.transicao(),
+    window.scroll(0,0)
   }
   transicao() {
     var parent = document.querySelector('.splitview')! as HTMLElement,

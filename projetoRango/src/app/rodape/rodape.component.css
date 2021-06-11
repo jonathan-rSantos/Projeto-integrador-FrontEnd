@@ -15,15 +15,15 @@ ul.social-network{
       padding: 10px;
   }
   .fa-facebook:hover{
-      color: #3b5998;
+      color: #61156b;
   }
 
   .fa-instagram:hover{
-      color: rgb(202, 63, 82);
+      color: #61156b;
   }
 
   .fa-github:hover{
-      color: teal;
+      color: #61156b;
   }
   #bg-rodape{
       background-color: #8dba45;

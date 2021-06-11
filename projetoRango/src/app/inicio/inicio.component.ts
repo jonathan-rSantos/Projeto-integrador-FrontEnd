@@ -61,8 +61,6 @@ reverse = true
   getAllPostagens(){
     this.postagemService.getAllPostagens().subscribe((resp: Postagem[]) =>{
       this.listasPostagens = resp 
-    }, erro => {
-      console.log('postagens: funcionei')
     })
   }
 
@@ -88,7 +86,6 @@ reverse = true
       this.alertas.showAlertSuccess('Postagem realizada com sucesso!')
       this.postagem = new Postagem()
       this.getAllPostagens()
-      console.log('postagens: funcionei')
     })
   }
 
